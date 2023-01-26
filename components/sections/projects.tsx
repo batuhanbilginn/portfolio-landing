@@ -44,7 +44,9 @@ const Projects = () => {
           </div>
           <div className="order-first sm:order-last">
             <FeaturedBox>
-              <h2 className="text-3xl font-gothamMedium">hortiturkey</h2>
+              <h2 className="text-2xl sm:text-3xl font-gothamMedium">
+                hortiturkey
+              </h2>
               <p className="text-secondaryWhite">
                 I founded and sold a community and marketplace platform that
                 included a Next.js web app reaches{" "}

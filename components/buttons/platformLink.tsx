@@ -34,6 +34,7 @@ const renderPlatformIcon = (platform: Platform) => {
 const PlatformLink = ({ platform, href }: PlatformLinkProps) => {
   return (
     <Link
+      target="_blank"
       className="bg-white shadow-lg rounded-md w-11 h-11 hover:pb-1 duration-150 transition-all ease-out flex items-center justify-center"
       href={href}
     >

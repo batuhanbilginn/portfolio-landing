@@ -24,7 +24,9 @@ const Stacks = () => {
         <div className="relative z-30 grid grid-cols-1 gap-8 text-white sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
             <FeaturedBox>
-              <h2 className="text-3xl font-gothamMedium">Current Stack</h2>
+              <h2 className="text-2xl sm:text-3xl font-gothamMedium">
+                Current Stack
+              </h2>
               <p className="text-secondaryWhite">
                 I’ve been building apps with{" "}
                 <span className="font-medium text-white">React</span> for 3
@@ -49,7 +51,7 @@ const Stacks = () => {
           <RegularBox>
             <div className="@container">
               <h2 className="text-2xl font-gothamMedium">Love to use</h2>
-              <p className="text-sm text-secondaryWhite">
+              <p className="sm:text-sm text-secondaryWhite">
                 These are the libraries, technologies and tools that I use a lot
                 in projects.
               </p>
@@ -72,7 +74,7 @@ const Stacks = () => {
           </RegularBox>
           <RegularBox>
             <h2 className="text-2xl font-gothamMedium">Learning</h2>
-            <p className="text-sm text-secondaryWhite">
+            <p className="sm:text-sm text-secondaryWhite">
               Currently focusing on AI topics such as Embeddings, Semantic
               Search, Generative AI, Classification, Clustering etc.
             </p>

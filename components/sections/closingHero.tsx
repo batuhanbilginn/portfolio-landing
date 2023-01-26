@@ -19,7 +19,7 @@ const ClosingHero = () => {
       {/* Content */}
       <PaddingContainer>
         <div className="relative z-20">
-          <h1 className="text-5xl leading-tight font-gothamMedium sm:mx-auto md:max-w-[14ch]">
+          <h1 className="text-5xl font-gothamMedium sm:mx-auto md:max-w-[14ch]">
             Let us meet,
             <span className="font-gothamBold"> if we are a good match!</span>
           </h1>
@@ -31,7 +31,7 @@ const ClosingHero = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex items-center max-w-sm gap-6 mt-10 sm:mx-auto">
+          <div className="flex flex-wrap items-center max-w-sm gap-6 mt-10 sm:mx-auto">
             <PrimaryButton title="Hey" href="mailto:batuhanbilginn@gmail.com">
               👋🏽
             </PrimaryButton>

@@ -8,7 +8,7 @@ interface PrimaryButtonProps {
 }
 const PrimaryButton = ({ title, children, href }: PrimaryButtonProps) => {
   return (
-    <Link className="w-full" title={title} href={href as string}>
+    <Link title={title} href={href as string}>
       <div
         style={{
           backgroundImage:
@@ -16,7 +16,7 @@ const PrimaryButton = ({ title, children, href }: PrimaryButtonProps) => {
           backgroundSize: "200% 200%",
           animation: "gradient 5s ease-out infinite",
         }}
-        className="w-full p-[2px] rounded-lg shadow-md relative"
+        className="p-[2px] rounded-lg shadow-md relative"
       >
         {/* Overlay */}
         <div className="absolute rounded-md inset-0 m-[2px] bg-primaryBlack/20" />
