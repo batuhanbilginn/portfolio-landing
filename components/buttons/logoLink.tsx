@@ -78,20 +78,22 @@ const LogoLink = ({ logo }: { logo: Logo }) => {
   };
 
   return (
-    <Link
-      id={logo}
-      href="/"
-      target="_blank"
-      data-tooltip-content={logo}
-      className={`bg-white rounded-lg w-10 h-10 flex shadow-lg p-[6px] hover:pb-4 duration-150 ease-out transition-all ${
-        logo === Logo.Typescript || logo === Logo.Javascript
-          ? "justify-end items-end"
-          : "justify-center items-center"
-      }`}
-    >
+    <>
       <ReactTooltip anchorId={logo} />
-      {getLogo(logo)}
-    </Link>
+      <Link
+        id={logo}
+        href="/"
+        target="_blank"
+        data-tooltip-content={logo}
+        className={`bg-white rounded-lg w-10 h-10 flex shadow-lg p-[6px] hover:pb-4 duration-150 ease-out transition-all ${
+          logo === Logo.Typescript || logo === Logo.Javascript
+            ? "justify-end items-end"
+            : "justify-center items-center"
+        }`}
+      >
+        {getLogo(logo)}
+      </Link>
+    </>
   );
 };
 
