@@ -1,6 +1,5 @@
 import { Inter } from "@next/font/google";
 import localFont from "@next/font/local";
-import "react-tooltip/dist/react-tooltip.css";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });

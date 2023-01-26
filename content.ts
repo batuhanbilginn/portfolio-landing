@@ -12,6 +12,6 @@ export const PlatformLinks = [
   },
   {
     platform: Platform.Youtube,
-    href: "https://www.youtube.com/makrdev",
+    href: "https://www.youtube.com/@makrdev",
   },
 ];

@@ -26,7 +26,7 @@ const ClosingHero = () => {
           <p className="max-w-lg mx-auto mt-4 text-xl leading-normal text-secondaryBlack">
             I'm fully open to communicate, share thoughts and{" "}
             <span className="font-medium">
-              consider business related opportunities at the moment.
+              consider business related opportunities.
             </span>
           </p>
 

@@ -1,8 +1,6 @@
 "use client";
 import { Logo } from "@/types/generalTypes";
 import dynamic from "next/dynamic";
-import Link from "next/link";
-import { Tooltip as ReactTooltip } from "react-tooltip";
 
 const TypescriptLogo = dynamic(() => import("../logo/typescript"));
 const JavascriptLogo = dynamic(() => import("../logo/javascript"));
@@ -26,7 +24,7 @@ const OpenAILogo = dynamic(() => import("../logo/openAI"));
 const PineconeLogo = dynamic(() => import("../logo/pinecone"));
 const PythonLogo = dynamic(() => import("../logo/python"));
 
-const LogoLink = ({ logo }: { logo: Logo }) => {
+const TechLogo = ({ logo }: { logo: Logo }) => {
   // Get Logo Path
   const getLogo = (logo: Logo) => {
     switch (logo) {
@@ -78,23 +76,23 @@ const LogoLink = ({ logo }: { logo: Logo }) => {
   };
 
   return (
-    <>
-      <ReactTooltip anchorId={logo} />
-      <Link
+    <div className="relative z-[100] group">
+      {/* Tooltip */}
+      <div className="absolute hidden sm:block z-[100] left-1/2 -translate-x-1/2 transform translate-y-2 group-hover:translate-y-0 text-sm invisible px-2 py-1 transition-all duration-100 ease-out rounded-md opacity-0 -top-10 group-hover:visible group-hover:opacity-100 bg-bgBlack whitespace-nowrap">
+        {logo}
+      </div>
+      <div
         id={logo}
-        href="/"
-        target="_blank"
-        data-tooltip-content={logo}
-        className={`bg-white rounded-lg w-10 h-10 flex shadow-lg p-[6px] hover:pb-4 duration-150 ease-out transition-all ${
+        className={`bg-white relative z-10 cursor-pointer rounded-lg w-10 h-10 flex  shadow-lg p-[6px] hover:pb-4 duration-150 ease-out transition-all ${
           logo === Logo.Typescript || logo === Logo.Javascript
             ? "justify-end items-end"
             : "justify-center items-center"
         }`}
       >
         {getLogo(logo)}
-      </Link>
-    </>
+      </div>
+    </div>
   );
 };
 
-export default LogoLink;
+export default TechLogo;

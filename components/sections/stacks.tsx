@@ -2,7 +2,7 @@ import { Logo } from "@/types/generalTypes";
 import Image from "next/image";
 import FeaturedBox from "../boxes/featuredBox";
 import RegularBox from "../boxes/regularBox";
-import LogoLink from "../buttons/logoLink";
+import LogoLink from "../buttons/techLogo";
 import PaddingContainer from "../layouts/paddingContainer";
 
 const Stacks = () => {
@@ -61,10 +61,10 @@ const Stacks = () => {
                 <LogoLink logo={Logo.Jotai} />
                 <LogoLink logo={Logo.Framer} />
                 <LogoLink logo={Logo.Github} />
-                <LogoLink logo={Logo.Vercel} />
+                <LogoLink logo={Logo.AWS} />
                 <LogoLink logo={Logo.DigitalOcean} />
                 <LogoLink logo={Logo.GCS} />
-                <LogoLink logo={Logo.AWS} />
+                <LogoLink logo={Logo.Vercel} />
                 <LogoLink logo={Logo.Directus} />
                 <LogoLink logo={Logo.Prisma} />
                 <LogoLink logo={Logo.Postgres} />

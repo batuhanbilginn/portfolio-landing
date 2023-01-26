@@ -3,7 +3,7 @@ import { Logo } from "@/types/generalTypes";
 import Image from "next/image";
 import FeaturedBox from "../boxes/featuredBox";
 import RegularBox from "../boxes/regularBox";
-import LogoLink from "../buttons/logoLink";
+import LogoLink from "../buttons/techLogo";
 import PaddingContainer from "../layouts/paddingContainer";
 
 const Projects = () => {
