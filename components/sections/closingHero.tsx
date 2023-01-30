@@ -1,24 +1,41 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import { PlatformLinks } from "@/content";
-import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import PlatformLink from "../buttons/platformLink";
 import PrimaryButton from "../buttons/primaryButton";
 import PaddingContainer from "../layouts/paddingContainer";
 const ClosingHero = () => {
+  const containerRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["center end", "end end"],
+  });
+
+  const fadeIn = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  const slideIn = useTransform(scrollYProgress, [0, 1], [50, 0]);
+  const scaleUp = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
+
   return (
     <section className="relative py-20 sm:py-32 sm:text-center">
-      {/* Bacgkround */}
-      <Image
-        className="z-0 object-cover object-center rotate-180 brightness-105 contrast-200"
-        src="/hero-gradient-bg-light.png"
-        alt="Hero BG"
-        fill
-      />
-      {/* Overlay for Backdrop Blur */}
-      <div className="absolute inset-0 z-10 backdrop-blur-lg" />
+      {/* Pattern */}
+      <div className="absolute inset-0 z-0 opacity-30 bg-hero-pattern bg-1 bg-blend-multiply" />
+      {/* Overlay */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-white via-white/80 to-white" />
+
       {/* Content */}
       <PaddingContainer>
-        <div className="relative z-20">
+        <motion.div
+          style={{
+            opacity: fadeIn,
+            y: slideIn,
+            scale: scaleUp,
+          }}
+          ref={containerRef}
+          className="relative z-20"
+        >
           <h1 className="text-5xl font-gothamMedium sm:mx-auto md:max-w-[14ch]">
             Let us meet,
             <span className="font-gothamBold"> if we are a good match!</span>
@@ -56,7 +73,7 @@ const ClosingHero = () => {
               work abroad and remote.
             </p>
           </div>
-        </div>
+        </motion.div>
       </PaddingContainer>
     </section>
   );

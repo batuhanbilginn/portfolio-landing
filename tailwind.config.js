@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "section-pattern": "url('/pattern.svg')",
+        "hero-pattern": "url('/black-pattern.svg')",
       },
       backgroundSize: {
         auto: "auto",

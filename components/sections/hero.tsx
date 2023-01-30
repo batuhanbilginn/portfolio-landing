@@ -1,24 +1,54 @@
+"use client";
 import { PlatformLinks } from "@/content";
-import Image from "next/image";
+import { motion } from "framer-motion";
 import PlatformLink from "../buttons/platformLink";
 import PrimaryButton from "../buttons/primaryButton";
 import PaddingContainer from "../layouts/paddingContainer";
 
+/* Content Animation */
+const itemAnimation = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+/* BG Animation */
+const bgAnimation = {
+  hidden: { opacity: 0, scale: 0.98 },
+  visible: {
+    opacity: 0.3,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 const Hero = () => {
   return (
     <section className="relative py-20 sm:py-32 sm:text-center">
-      {/* Bacgkround */}
-      <Image
-        className="z-0 object-cover object-center brightness-105 contrast-200"
-        src="/hero-gradient-bg-light.png"
-        alt="Hero BG"
-        fill
+      {/* Pattern */}
+      <motion.div
+        variants={bgAnimation}
+        initial="hidden"
+        animate="visible"
+        className="absolute inset-0 z-0 bg-hero-pattern bg-1 bg-blend-multiply"
       />
-      {/* Overlay for Backdrop Blur */}
-      <div className="absolute inset-0 z-10 backdrop-blur-lg" />
+      {/* Overlay */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-white via-white/80 to-white" />
       {/* Content */}
       <PaddingContainer>
-        <div className="relative z-20">
+        <motion.div
+          variants={itemAnimation}
+          initial="hidden"
+          animate="visible"
+          className="relative z-20"
+        >
           <h1 className="text-5xl leading-tight font-gothamMedium sm:mx-auto md:max-w-[18ch]">
             Hey, I’m Batuhan,
             <span className="font-gothamBold"> a Front-end Developer</span>
@@ -59,7 +89,7 @@ const Hero = () => {
               work abroad and remote.
             </p>
           </div>
-        </div>
+        </motion.div>
       </PaddingContainer>
     </section>
   );

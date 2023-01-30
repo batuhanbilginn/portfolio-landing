@@ -8,7 +8,7 @@ export enum Platform {
   Youtube = "youtube",
 }
 
-export enum Logo {
+export enum Tech {
   Typescript = "Typescript",
   Javascript = "Javascript",
   React = "React",
