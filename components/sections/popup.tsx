@@ -16,7 +16,7 @@ const Popup = ({ closePopupHandler }: PopupProps) => {
         <div className="absolute z-[99] top-4 right-4">
           <button
             onClick={closePopupHandler}
-            className="px-2 py-1 text-xs text-white rounded-md bg-white/10"
+            className="px-2 py-1 text-xs text-white rounded-md bg-white/5"
           >
             ESC
           </button>
