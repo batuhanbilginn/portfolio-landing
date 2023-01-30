@@ -44,10 +44,9 @@ const Projects = () => {
         fill
       />
       {/* Overlay for Backdrop Blur */}
-
-      <div className="absolute inset-0 z-10 opacity-20 bg-section-pattern bg-1 bg-blend-multiply"></div>
+      <div className="absolute inset-0 z-10 opacity-20 bg-section-pattern bg-1 bg-blend-multiply" />
       {/* Backgorund Gradient */}
-      <div className="absolute inset-0 z-20 bg-gradient-to-b from-bgBlack via-bgBlack/80 to-bgBlack"></div>
+      <div className="absolute inset-0 z-20 bg-gradient-to-b from-bgBlack via-bgBlack/80 to-bgBlack" />
       <PaddingContainer>
         <div className="relative z-30 grid grid-cols-1 gap-8 text-white sm:grid-cols-2 lg:grid-cols-2">
           <div className="space-y-8">

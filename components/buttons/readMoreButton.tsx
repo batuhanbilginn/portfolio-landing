@@ -1,8 +1,13 @@
 "use client";
 
-const ReadMoreButton = () => {
+interface ReadMoreButtonProps {
+  openPopupHandler: () => void;
+}
+
+const ReadMoreButton = ({ openPopupHandler }: ReadMoreButtonProps) => {
   return (
     <button
+      onClick={openPopupHandler}
       style={{
         backgroundImage:
           "radial-gradient(100% 1338.07% at 4.85% 0%, #8B74F6 0%, #B4E5DC 100%)",

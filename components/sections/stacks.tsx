@@ -55,10 +55,10 @@ const Stacks = () => {
         alt="Hero BG"
         fill
       />
-      {/* Overlay for Backdrop Blur */}
-      <div className="absolute inset-0 z-10 opacity-20 bg-section-pattern bg-1 bg-blend-multiply"></div>
+      {/* Overlay for Backdrop Blur and Pattern */}
+      <div className="absolute inset-0 z-10 opacity-20 bg-section-pattern bg-1 bg-blend-multiply" />
       {/* Backgorund Gradient */}
-      <div className="absolute inset-0 z-20 bg-gradient-to-b from-bgBlack via-bgBlack/80 to-bgBlack"></div>
+      <div className="absolute inset-0 z-20 bg-gradient-to-b from-bgBlack via-bgBlack/80 to-bgBlack" />
       <PaddingContainer>
         <motion.div
           variants={initialAnimation}

@@ -16,7 +16,7 @@ const Pinecone = () => {
       <path
         d="M13.1294 4.85453L13.7482 1.41553"
         stroke="#2C2A2A"
-        stroke-width="1.77"
+        strokeWidth="1.77"
         strokeLinecap="square"
       />
       <path
@@ -28,7 +28,7 @@ const Pinecone = () => {
       <path
         d="M15.976 3.63451L13.8189 1L10.8839 2.71508"
         stroke="#2C2A2A"
-        stroke-width="1.77"
+        strokeWidth="1.77"
         strokeLinecap="square"
         strokeLinejoin="round"
       />
@@ -41,7 +41,7 @@ const Pinecone = () => {
       <path
         d="M10.5479 19.5299L11.149 16.0909"
         stroke="#2C2A2A"
-        stroke-width="1.77"
+        strokeWidth="1.77"
         strokeLinecap="square"
       />
       <path
@@ -53,7 +53,7 @@ const Pinecone = () => {
       <path
         d="M13.3946 18.3011L11.2198 15.6754L8.29352 17.3993"
         stroke="#2C2A2A"
-        stroke-width="1.77"
+        strokeWidth="1.77"
         strokeLinecap="square"
         strokeLinejoin="round"
       />
@@ -66,7 +66,7 @@ const Pinecone = () => {
       <path
         d="M11.7944 12.4397L12.3956 9.00073"
         stroke="#2C2A2A"
-        stroke-width="1.77"
+        strokeWidth="1.77"
         strokeLinecap="square"
       />
       <path
@@ -78,7 +78,7 @@ const Pinecone = () => {
       <path
         d="M14.641 11.2108L12.4751 8.59399L9.54883 10.3091"
         stroke="#2C2A2A"
-        stroke-width="1.77"
+        strokeWidth="1.77"
         strokeLinecap="square"
         strokeLinejoin="round"
       />
@@ -95,7 +95,7 @@ const Pinecone = () => {
       <path
         d="M5.67667 19.2294L3.03333 21.0682"
         stroke="#2C2A2A"
-        stroke-width="1.68"
+        strokeWidth="1.68"
         strokeLinecap="square"
       />
       <path
@@ -107,7 +107,7 @@ const Pinecone = () => {
       <path
         d="M5.83583 22.2089L2.71509 21.2894L2.94494 18.0449"
         stroke="#2C2A2A"
-        stroke-width="1.68"
+        strokeWidth="1.68"
         strokeLinecap="square"
         strokeLinejoin="round"
       />
@@ -120,7 +120,7 @@ const Pinecone = () => {
       <path
         d="M15.2776 20.9534L17.1165 23.6056"
         stroke="#2C2A2A"
-        stroke-width="1.68"
+        strokeWidth="1.68"
         strokeLinecap="square"
       />
       <path
@@ -132,7 +132,7 @@ const Pinecone = () => {
       <path
         d="M14.093 23.6939L17.3375 23.9149L18.257 20.8119"
         stroke="#2C2A2A"
-        stroke-width="1.68"
+        strokeWidth="1.68"
         strokeLinecap="square"
         strokeLinejoin="round"
       />
@@ -145,7 +145,7 @@ const Pinecone = () => {
       <path
         d="M18.2923 15.5695L21.528 16.1529"
         stroke="#2C2A2A"
-        stroke-width="1.72"
+        strokeWidth="1.72"
         strokeLinecap="square"
       />
       <path
@@ -157,7 +157,7 @@ const Pinecone = () => {
       <path
         d="M19.4062 18.4073L21.9169 16.2236L20.3345 13.3151"
         stroke="#2C2A2A"
-        stroke-width="1.72"
+        strokeWidth="1.72"
         strokeLinecap="square"
         strokeLinejoin="round"
       />
@@ -170,7 +170,7 @@ const Pinecone = () => {
       <path
         d="M17.3463 9.15113L20.2284 7.55981"
         stroke="#2C2A2A"
-        stroke-width="1.72"
+        strokeWidth="1.72"
         strokeLinecap="square"
       />
       <path
@@ -182,7 +182,7 @@ const Pinecone = () => {
       <path
         d="M17.5055 6.10107L20.5732 7.37412L19.9985 10.6363"
         stroke="#2C2A2A"
-        stroke-width="1.72"
+        strokeWidth="1.72"
         strokeLinecap="square"
         strokeLinejoin="round"
       />
@@ -195,7 +195,7 @@ const Pinecone = () => {
       <path
         d="M4.63349 13.1648L1.38898 12.599"
         stroke="#2C2A2A"
-        stroke-width="1.72"
+        strokeWidth="1.72"
         strokeLinecap="square"
       />
       <path
@@ -207,7 +207,7 @@ const Pinecone = () => {
       <path
         d="M2.60899 15.4456L1 12.5371L3.48422 10.3446"
         stroke="#2C2A2A"
-        stroke-width="1.72"
+        strokeWidth="1.72"
         strokeLinecap="square"
         strokeLinejoin="round"
       />
@@ -220,7 +220,7 @@ const Pinecone = () => {
       <path
         d="M7.71002 7.44486L5.54407 4.96948"
         stroke="#2C2A2A"
-        stroke-width="1.72"
+        strokeWidth="1.72"
         strokeLinecap="square"
       />
       <path
@@ -232,7 +232,7 @@ const Pinecone = () => {
       <path
         d="M8.603 4.53625L5.28777 4.6777L4.70428 7.9399"
         stroke="#2C2A2A"
-        stroke-width="1.72"
+        strokeWidth="1.72"
         strokeLinecap="square"
         strokeLinejoin="round"
       />

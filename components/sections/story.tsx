@@ -4,7 +4,11 @@ import { useRef } from "react";
 import ReadMoreButton from "../buttons/readMoreButton";
 import PaddingContainer from "../layouts/paddingContainer";
 
-const Story = () => {
+interface StoryProps {
+  openPopupHandler: () => void;
+}
+
+const Story = ({ openPopupHandler }: StoryProps) => {
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -34,14 +38,14 @@ const Story = () => {
             {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-bgBlack/80 to-bgBlack/95" />
             <p className="text-lg">
-              Transitioned from being a Digital Marketer into a Developer 3
-              years ago. I love combine both worlds to build seamless and
-              impactful experiences. I love combine both worlds to build
-              seamless and impactful experiences.
+              I was truly amazed by having a power to build something with code.
+              Learning Javascript was my ‘eureka’ moment. When I dig deeper into
+              Javascript, my instinct to build something tangible was got bigger
+              and bigger.
             </p>
           </div>
           {/* Button */}
-          <ReadMoreButton />
+          <ReadMoreButton openPopupHandler={openPopupHandler} />
         </motion.div>
       </PaddingContainer>
     </section>
