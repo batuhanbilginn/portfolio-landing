@@ -41,6 +41,7 @@ const Popup = ({ closePopupHandler }: PopupProps) => {
           <p className="mb-2 leading-loose">
             After graduating{" "}
             <Link
+              target="_blank"
               className="text-white underline underline-offset-4"
               href="https://www.bilgi.edu.tr/en/"
             >
@@ -52,6 +53,7 @@ const Popup = ({ closePopupHandler }: PopupProps) => {
           <p className="mb-2 leading-loose">
             Then, I continued my career at{" "}
             <Link
+              target="_blank"
               className="text-white underline underline-offset-4"
               href="https://www.informamarkets.com/en/home.html"
             >
@@ -64,6 +66,7 @@ const Popup = ({ closePopupHandler }: PopupProps) => {
             After working 5 years at Informa Markets, I quit my job to build my
             startup{" "}
             <Link
+              target="_blank"
               className="text-white underline underline-offset-4"
               href="https://www.hortiturkey.com/en"
             >
@@ -205,6 +208,7 @@ const Popup = ({ closePopupHandler }: PopupProps) => {
             I basically helps my to solidify what I learn and continue. That’s
             why I started a Youtube channel called{" "}
             <Link
+              target="_blank"
               className="text-white underline underline-offset-4"
               href="https://www.youtube.com/@makrdev"
             >

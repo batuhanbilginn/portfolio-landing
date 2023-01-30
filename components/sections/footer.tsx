@@ -15,7 +15,11 @@ const Footer = () => {
           </div>
           <div>
             You like it?{" "}
-            <Link target="_blank" className="text-white" href="/github-link">
+            <Link
+              target="_blank"
+              className="text-white"
+              href="https://github.com/batuhanbilginn/portfolio-landing"
+            >
               Clone this website from Github
             </Link>
           </div>
