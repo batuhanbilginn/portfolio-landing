@@ -36,7 +36,7 @@ const ClosingHero = () => {
           ref={containerRef}
           className="relative z-20"
         >
-          <h1 className="text-5xl font-gothamMedium sm:mx-auto md:max-w-[14ch]">
+          <h1 className="text-5xl leading-snug font-gothamMedium sm:mx-auto md:max-w-[14ch]">
             Let us meet,
             <span className="font-gothamBold"> if we are a good match!</span>
           </h1>

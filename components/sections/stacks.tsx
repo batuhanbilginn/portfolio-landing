@@ -36,10 +36,10 @@ const Stacks = () => {
 
   // Initial Animation
   const initialAnimation = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { y: 20 },
     visible: {
       y: 0,
-      opacity: 1,
+
       transition: {
         duration: 1,
       },
@@ -55,7 +55,7 @@ const Stacks = () => {
         alt="Hero BG"
         fill
       />
-      {/* Overlay for Backdrop Blur and Pattern */}
+      {/* Overlay for Backdrop Blur */}
       <div className="absolute inset-0 z-10 opacity-20 bg-section-pattern bg-1 bg-blend-multiply" />
       {/* Backgorund Gradient */}
       <div className="absolute inset-0 z-20 bg-gradient-to-b from-bgBlack via-bgBlack/80 to-bgBlack" />
@@ -64,97 +64,100 @@ const Stacks = () => {
           variants={initialAnimation}
           initial="hidden"
           animate="visible"
-          className="relative z-30 grid grid-cols-1 gap-8 text-white sm:grid-cols-2 lg:grid-cols-4"
+          className="relative z-30"
         >
-          <motion.div
-            ref={featuredRef}
-            style={{
-              opacity: fadeInFeatured,
-              y: slideInFeatured,
-            }}
-            className="sm:col-span-2"
-          >
-            <FeaturedBox>
-              <h2 className="text-2xl sm:text-3xl font-gothamMedium">
-                Current Stack
-              </h2>
-              <p className="text-secondaryWhite">
-                I’ve been building apps with{" "}
-                <span className="font-medium text-white">React</span> for 3
-                years. <span className="font-medium text-white">Next.js</span>{" "}
-                is my go-to framework when I start a new project. And, I mostly
-                write my code in{" "}
-                <span className="font-medium text-white">TypeScript</span> with{" "}
-                <span className="font-medium text-white">Tailwind CSS</span> for
-                styling.
-              </p>
-              {/* Logos */}
-              <div className="flex flex-wrap items-center justify-start gap-2 mt-6">
-                <LogoLink tech={Tech.Javascript} />
-                <LogoLink tech={Tech.Typescript} />
-                <LogoLink tech={Tech.React} />
-                <LogoLink tech={Tech.Next} />
-                <LogoLink tech={Tech.Tailwind} />
-                <LogoLink tech={Tech.Supabase} />
-              </div>
-            </FeaturedBox>
-          </motion.div>
-          <motion.div
-            ref={regularRef}
-            style={{
-              opacity: fadeInRegular,
-              y: slideInRegular,
-            }}
-            className="h-full"
-          >
-            <RegularBox>
-              <div className="@container">
-                <h2 className="text-2xl font-gothamMedium">Love to use</h2>
+          <div className="relative z-30 grid grid-cols-1 gap-8 text-white sm:grid-cols-2 lg:grid-cols-4">
+            <motion.div
+              ref={featuredRef}
+              style={{
+                opacity: fadeInFeatured,
+                y: slideInFeatured,
+              }}
+              className="sm:col-span-2"
+            >
+              <FeaturedBox>
+                <h2 className="text-2xl sm:text-3xl font-gothamMedium">
+                  Current Stack
+                </h2>
+                <p className="text-secondaryWhite">
+                  I’ve been building apps with{" "}
+                  <span className="font-medium text-white">React</span> for 3
+                  years. <span className="font-medium text-white">Next.js</span>{" "}
+                  is my go-to framework when I start a new project. And, I
+                  mostly write my code in{" "}
+                  <span className="font-medium text-white">TypeScript</span>{" "}
+                  with{" "}
+                  <span className="font-medium text-white">Tailwind CSS</span>{" "}
+                  for styling.
+                </p>
+                {/* Logos */}
+                <div className="flex flex-wrap items-center justify-start gap-2 mt-6">
+                  <LogoLink tech={Tech.Javascript} />
+                  <LogoLink tech={Tech.Typescript} />
+                  <LogoLink tech={Tech.React} />
+                  <LogoLink tech={Tech.Next} />
+                  <LogoLink tech={Tech.Tailwind} />
+                  <LogoLink tech={Tech.Supabase} />
+                </div>
+              </FeaturedBox>
+            </motion.div>
+            <motion.div
+              ref={regularRef}
+              style={{
+                opacity: fadeInRegular,
+                y: slideInRegular,
+              }}
+              className="h-full"
+            >
+              <RegularBox>
+                <div className="@container">
+                  <h2 className="text-2xl font-gothamMedium">Love to use</h2>
+                  <p className="sm:text-sm text-secondaryWhite">
+                    These are the libraries, technologies and tools that I use a
+                    lot in projects.
+                  </p>
+                  {/* Logos */}
+                  <div className="flex flex-wrap gap-2 mt-6">
+                    <LogoLink tech={Tech.SWR} />
+                    <LogoLink tech={Tech.Jotai} />
+                    <LogoLink tech={Tech.Framer} />
+                    <LogoLink tech={Tech.Github} />
+                    <LogoLink tech={Tech.AWS} />
+                    <LogoLink tech={Tech.DigitalOcean} />
+                    <LogoLink tech={Tech.GCS} />
+                    <LogoLink tech={Tech.Vercel} />
+                    <LogoLink tech={Tech.Directus} />
+                    <LogoLink tech={Tech.Prisma} />
+                    <LogoLink tech={Tech.Postgres} />
+                    <LogoLink tech={Tech.MongoDB} />
+                  </div>
+                </div>
+              </RegularBox>
+            </motion.div>
+            <motion.div
+              ref={regularRef2}
+              style={{
+                opacity: fadeInRegular2,
+                y: slideInRegular2,
+              }}
+              className="h-full"
+            >
+              <RegularBox>
+                <h2 className="text-2xl font-gothamMedium">Learning</h2>
                 <p className="sm:text-sm text-secondaryWhite">
-                  These are the libraries, technologies and tools that I use a
-                  lot in projects.
+                  Currently focusing on AI topics such as Embeddings, Semantic
+                  Search, Generative AI, Classification, Clustering etc.
                 </p>
                 {/* Logos */}
                 <div className="flex flex-wrap gap-2 mt-6">
-                  <LogoLink tech={Tech.SWR} />
-                  <LogoLink tech={Tech.Jotai} />
-                  <LogoLink tech={Tech.Framer} />
-                  <LogoLink tech={Tech.Github} />
-                  <LogoLink tech={Tech.AWS} />
-                  <LogoLink tech={Tech.DigitalOcean} />
+                  <LogoLink tech={Tech.OpenAI} />
+                  <LogoLink tech={Tech.Pinecone} />
                   <LogoLink tech={Tech.GCS} />
-                  <LogoLink tech={Tech.Vercel} />
-                  <LogoLink tech={Tech.Directus} />
-                  <LogoLink tech={Tech.Prisma} />
-                  <LogoLink tech={Tech.Postgres} />
-                  <LogoLink tech={Tech.MongoDB} />
+                  <LogoLink tech={Tech.Python} />
                 </div>
-              </div>
-            </RegularBox>
-          </motion.div>
-          <motion.div
-            ref={regularRef2}
-            style={{
-              opacity: fadeInRegular2,
-              y: slideInRegular2,
-            }}
-            className="h-full"
-          >
-            <RegularBox>
-              <h2 className="text-2xl font-gothamMedium">Learning</h2>
-              <p className="sm:text-sm text-secondaryWhite">
-                Currently focusing on AI topics such as Embeddings, Semantic
-                Search, Generative AI, Classification, Clustering etc.
-              </p>
-              {/* Logos */}
-              <div className="flex flex-wrap gap-2 mt-6">
-                <LogoLink tech={Tech.OpenAI} />
-                <LogoLink tech={Tech.Pinecone} />
-                <LogoLink tech={Tech.GCS} />
-                <LogoLink tech={Tech.Python} />
-              </div>
-            </RegularBox>
-          </motion.div>
+              </RegularBox>
+            </motion.div>
+          </div>
         </motion.div>
       </PaddingContainer>
     </section>

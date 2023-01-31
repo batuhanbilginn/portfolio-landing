@@ -63,7 +63,7 @@ const Projects = () => {
                   <p className="text-secondaryWhite">
                     Learning and sharing what I learn is my true passion that's
                     why I started creating Youtube videos about web
-                    developemment, startups and marketing.
+                    developement, startups and marketing.
                   </p>
                 </div>
               </RegularBox>
@@ -79,7 +79,7 @@ const Projects = () => {
                 <h2 className="text-2xl font-gothamMedium">freelance</h2>
                 <p className="text-secondaryWhite">
                   I also, continue to work as a freelance developer to feed my
-                  creativity and stabilise my income after I sold my startup.
+                  creativity and learn new thigns with new challenges.
                 </p>
               </RegularBox>
             </motion.div>
