@@ -49,7 +49,7 @@ const Hero = () => {
           animate="visible"
           className="relative z-20"
         >
-          <h1 className="text-5xl leading-tight font-gothamMedium sm:mx-auto md:max-w-[18ch]">
+          <h1 className="text-4xl sm:text-5xl font-gothamMedium sm:mx-auto md:max-w-[18ch]">
             Hey, I’m Batuhan,
             <span className="font-gothamBold"> a Front-end Developer</span>
           </h1>
